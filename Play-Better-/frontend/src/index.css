@@ -1,0 +1,229 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom radial gradient for pool balls */
+@layer utilities {
+  .bg-gradient-radial {
+    background: radial-gradient(circle at 30% 30%, var(--tw-gradient-stops));
+  }
+}
+
+/* Enhanced neon text animations */
+@keyframes neonPulse {
+  0% { 
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.9),
+                 0 0 20px rgba(255, 255, 255, 0.7),
+                 0 0 30px rgba(255, 0, 0, 0.8),
+                 0 0 40px rgba(255, 0, 0, 0.6),
+                 0 0 60px rgba(220, 38, 38, 0.5),
+                 0 0 80px rgba(220, 38, 38, 0.4),
+                 0 0 100px rgba(220, 38, 38, 0.3),
+                 4px 4px 0px rgba(255, 0, 0, 0.8),
+                 8px 8px 0px rgba(220, 38, 38, 0.6),
+                 12px 12px 0px rgba(185, 28, 28, 0.4);
+    filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.8))
+            drop-shadow(0 0 40px rgba(255, 0, 0, 0.7))
+            drop-shadow(0 0 60px rgba(220, 38, 38, 0.6));
+  }
+  100% { 
+    text-shadow: 0 0 15px rgba(255, 255, 255, 1),
+                 0 0 30px rgba(255, 255, 255, 0.9),
+                 0 0 45px rgba(255, 0, 0, 1),
+                 0 0 60px rgba(255, 0, 0, 0.8),
+                 0 0 90px rgba(220, 38, 38, 0.7),
+                 0 0 120px rgba(220, 38, 38, 0.6),
+                 0 0 150px rgba(220, 38, 38, 0.5),
+                 6px 6px 0px rgba(255, 0, 0, 1),
+                 12px 12px 0px rgba(220, 38, 38, 0.8),
+                 18px 18px 0px rgba(185, 28, 28, 0.6);
+    filter: drop-shadow(0 0 30px rgba(255, 255, 255, 1))
+            drop-shadow(0 0 60px rgba(255, 0, 0, 0.9))
+            drop-shadow(0 0 90px rgba(220, 38, 38, 0.8));
+  }
+}
+
+@keyframes flyIn {
+  0% {
+    transform: perspective(1000px) rotateY(180deg) rotateX(45deg) translateZ(-200px) translateX(-300px);
+    opacity: 0;
+  }
+  100% {
+    transform: perspective(1000px) rotateY(0deg) rotateX(0deg) translateZ(0px) translateX(0px);
+    opacity: 1;
+  }
+}
+
+:root {
+  /* Play Better Dark Theme - Inspired by logo */
+  --background: hsl(0, 0%, 8%);
+  --foreground: hsl(0, 0%, 95%);
+  --muted: hsl(0, 0%, 12%);
+  --muted-foreground: hsl(0, 0%, 60%);
+  --popover: hsl(0, 0%, 10%);
+  --popover-foreground: hsl(0, 0%, 95%);
+  --card: hsl(0, 0%, 10%);
+  --card-foreground: hsl(0, 0%, 95%);
+  --border: hsl(0, 0%, 20%);
+  --input: hsl(0, 0%, 15%);
+  --primary: hsl(0, 85%, 55%);
+  --primary-foreground: hsl(0, 0%, 98%);
+  --secondary: hsl(0, 0%, 15%);
+  --secondary-foreground: hsl(0, 0%, 95%);
+  --accent: hsl(0, 85%, 55%);
+  --accent-foreground: hsl(0, 0%, 98%);
+  --destructive: hsl(0, 70%, 50%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --ring: hsl(0, 85%, 55%);
+  --radius: 1rem;
+  
+  /* Play Better Custom Variables */
+  --play-better-red: hsl(0, 85%, 55%);
+  --play-better-red-dark: hsl(0, 75%, 45%);
+  --play-better-red-light: hsl(0, 85%, 65%);
+  --glass-bg: hsla(0, 0%, 100%, 0.05);
+  --glass-border: hsla(0, 0%, 100%, 0.1);
+  --neo-shadow-dark: hsla(0, 0%, 0%, 0.8);
+  --neo-shadow-light: hsla(0, 0%, 100%, 0.03);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-inter antialiased bg-background text-foreground;
+    background: linear-gradient(135deg, hsl(0, 0%, 5%) 0%, hsl(0, 0%, 12%) 50%, hsl(0, 0%, 8%) 100%);
+    background-attachment: fixed;
+    min-height: 100vh;
+  }
+}
+
+@layer utilities {
+  .glass-morphism {
+    background: var(--glass-bg);
+    backdrop-filter: blur(16px) saturate(180%);
+    border: 1px solid var(--glass-border);
+    box-shadow: 
+      0 8px 32px rgba(0, 0, 0, 0.37),
+      inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  }
+  
+  .neo-morphism {
+    background: linear-gradient(145deg, hsl(0, 0%, 12%), hsl(0, 0%, 8%));
+    box-shadow: 
+      20px 20px 60px var(--neo-shadow-dark),
+      -20px -20px 60px var(--neo-shadow-light),
+      inset 0 1px 3px rgba(255, 255, 255, 0.02);
+  }
+  
+  .neo-morphism-inset {
+    background: linear-gradient(145deg, hsl(0, 0%, 8%), hsl(0, 0%, 12%));
+    box-shadow: 
+      inset 8px 8px 16px var(--neo-shadow-dark),
+      inset -8px -8px 16px var(--neo-shadow-light);
+  }
+  
+  .pool-table-bg {
+    background: linear-gradient(135deg, #0d5016, #1a7f2e, #0d5016);
+    box-shadow: 
+      inset 0 0 50px rgba(0, 0, 0, 0.5),
+      0 0 30px rgba(13, 80, 22, 0.3);
+  }
+  
+  .glow-red {
+    box-shadow: 
+      0 0 20px hsla(0, 85%, 55%, 0.3),
+      0 0 40px hsla(0, 85%, 55%, 0.2),
+      0 0 60px hsla(0, 85%, 55%, 0.1);
+  }
+  
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  .animate-glow {
+    animation: glow 3s ease-in-out infinite alternate;
+  }
+  
+  .animate-slide-up {
+    animation: slideUp 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  
+  .animate-scale-in {
+    animation: scaleIn 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  
+  .animate-fade-in {
+    animation: fadeIn 0.8s ease-out;
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  33% { transform: translateY(-8px) rotate(1deg); }
+  66% { transform: translateY(-4px) rotate(-1deg); }
+}
+
+@keyframes glow {
+  from { 
+    box-shadow: 
+      0 0 20px hsla(0, 85%, 55%, 0.2),
+      0 0 40px hsla(0, 85%, 55%, 0.1); 
+  }
+  to { 
+    box-shadow: 
+      0 0 30px hsla(0, 85%, 55%, 0.4),
+      0 0 60px hsla(0, 85%, 55%, 0.2),
+      0 0 90px hsla(0, 85%, 55%, 0.1); 
+  }
+}
+
+@keyframes slideUp {
+  from { 
+    transform: translateY(30px) scale(0.95); 
+    opacity: 0; 
+  }
+  to { 
+    transform: translateY(0) scale(1); 
+    opacity: 1; 
+  }
+}
+
+@keyframes scaleIn {
+  from { 
+    transform: scale(0.9) rotate(-1deg); 
+    opacity: 0; 
+  }
+  to { 
+    transform: scale(1) rotate(0deg); 
+    opacity: 1; 
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.scrollbar-thin {
+  scrollbar-width: thin;
+}
+
+.scrollbar-thin::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: hsl(240, 3.7%, 15.9%);
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: hsl(240, 5%, 34%);
+  border-radius: 3px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb:hover {
+  background: hsl(240, 5%, 44%);
+}
