@@ -1,0 +1,4 @@
+MH-Profile-Version: 1.0
+Path: Mail
+Draft-Folder: drafts
+send: -draftfolder drafts

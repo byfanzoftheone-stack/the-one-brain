@@ -1,0 +1,12 @@
+{
+"name": "service-saas",
+"modules": [
+"crm",
+"scheduling",
+"invoicing",
+"analytics"
+],
+"frontend": "nextjs",
+"backend": "fastapi",
+"deploy": ["railway","vercel"]
+}

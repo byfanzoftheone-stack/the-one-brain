@@ -1,0 +1,9 @@
+{
+  "name": "little-pro",
+  "modules": [
+    "module-wall",
+    "builder-core",
+    "agent-labs",
+    "warehouse-sync"
+  ]
+}

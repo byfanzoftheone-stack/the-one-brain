@@ -1,0 +1,9 @@
+{
+  "name": "News Agent",
+  "id": "news-agent",
+  "type": "agent-module",
+  "category": "research",
+  "icon": "newspaper",
+  "description": "AI news and trend watcher for current topics and summaries.",
+  "tools": ["trend-scan", "news-summary", "topic-monitor"]
+}

@@ -1,0 +1,10 @@
+.less-history-file:
+.search
+"dashboard/page.tsx ==="
+"dashboard/page.tsx && echo
+" folder ==="
+.shell
+" 2. List all TS/TSX files excluding node_modules and .next
+" 3. Show the main dashboard page (limit lines for readability)
+" 4. List the app folder structure
+.mark

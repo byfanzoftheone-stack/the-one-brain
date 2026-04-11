@@ -1,0 +1,12 @@
+{
+"name": "community-app",
+"modules": [
+"user-profiles",
+"feed",
+"events",
+"leaderboard",
+"notifications"
+],
+"frontend": "nextjs",
+"backend": "fastapi"
+}

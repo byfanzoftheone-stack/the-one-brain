@@ -1,0 +1,14 @@
+{
+  "slug": "fanzo-core",
+  "name": "Fanzo Core Template",
+  "title": "Fanzo Core — Iron Standard Microservice",
+  "description": "Hardened Docker microservice template. Strict typing, health checks, defensive coding, reproducible containers. The foundation every SaaS service should start from.",
+  "category": "Developer Tools",
+  "price_monthly": 0,
+  "price_one_time": 49,
+  "currency": "USD",
+  "status": "active",
+  "stack": ["FastAPI", "Docker", "Pydantic", "Python 3.10"],
+  "use_cases": ["Microservice scaffold", "SaaS foundation", "API template", "Containerized services"],
+  "created_at": "2026-03-25T00:00:00Z"
+}

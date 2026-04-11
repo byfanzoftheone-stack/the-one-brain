@@ -1,0 +1,5 @@
+{
+  "name": "community-stack",
+  "modules": ["content-agent", "news-agent", "email-agent"],
+  "fits": ["pool-community", "car-community", "fighters", "gamers"]
+}

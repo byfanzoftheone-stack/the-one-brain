@@ -1,0 +1,342 @@
+{
+  "apps": {
+    "content-machine": {
+      "registered": "2026-03-16T21:42:54.529077+00:00",
+      "status": "active"
+    },
+    "email-growth-engine": {
+      "registered": "2026-03-16T21:42:54.529098+00:00",
+      "status": "active"
+    },
+    "little-pro": {
+      "registered": "2026-03-16T21:42:54.529105+00:00",
+      "status": "active"
+    },
+    "marketing-automation-app": {
+      "registered": "2026-03-16T21:42:54.529111+00:00",
+      "status": "active"
+    },
+    "productivity-tracker": {
+      "registered": "2026-03-16T21:42:54.529116+00:00",
+      "status": "active"
+    },
+    "seo-automation-app": {
+      "registered": "2026-03-16T21:42:54.529120+00:00",
+      "status": "active"
+    },
+    "the-one-control-panel-node": {
+      "registered": "2026-03-16T21:42:54.529125+00:00",
+      "status": "active"
+    }
+  },
+  "modules": {
+    "agents": {
+      "registered": "2026-03-16T21:42:54.529133+00:00",
+      "status": "active"
+    },
+    "ai": {
+      "registered": "2026-03-16T21:42:54.529138+00:00",
+      "status": "active"
+    },
+    "ai-tools": {
+      "registered": "2026-03-16T21:42:54.529143+00:00",
+      "status": "active"
+    },
+    "analytics": {
+      "registered": "2026-03-16T21:42:54.529148+00:00",
+      "status": "active"
+    },
+    "business": {
+      "registered": "2026-03-16T21:42:54.529152+00:00",
+      "status": "active"
+    },
+    "command": {
+      "registered": "2026-03-16T21:42:54.529156+00:00",
+      "status": "active"
+    },
+    "communication": {
+      "registered": "2026-03-16T21:42:54.529161+00:00",
+      "status": "active"
+    },
+    "companion": {
+      "registered": "2026-03-16T21:42:54.529165+00:00",
+      "status": "active"
+    },
+    "crm": {
+      "registered": "2026-03-16T21:42:54.529170+00:00",
+      "status": "active"
+    },
+    "data": {
+      "registered": "2026-03-16T21:42:54.529180+00:00",
+      "status": "active"
+    },
+    "labs": {
+      "registered": "2026-03-16T21:42:54.529185+00:00",
+      "status": "active"
+    },
+    "marketplace": {
+      "registered": "2026-03-16T21:42:54.529190+00:00",
+      "status": "active"
+    },
+    "operations": {
+      "registered": "2026-03-16T21:42:54.529194+00:00",
+      "status": "active"
+    },
+    "payments": {
+      "registered": "2026-03-16T21:42:54.529199+00:00",
+      "status": "active"
+    },
+    "people": {
+      "registered": "2026-03-16T21:42:54.529203+00:00",
+      "status": "active"
+    },
+    "scheduling": {
+      "registered": "2026-03-16T21:42:54.529208+00:00",
+      "status": "active"
+    },
+    "verticals": {
+      "registered": "2026-03-16T21:42:54.529212+00:00",
+      "status": "active"
+    }
+  },
+  "agents": {
+    "auditor": {
+      "registered": "2026-03-16T21:42:54.529219+00:00",
+      "status": "active"
+    },
+    "autopilot": {
+      "registered": "2026-03-16T21:42:54.529224+00:00",
+      "status": "active"
+    },
+    "builder": {
+      "registered": "2026-03-16T21:42:54.529228+00:00",
+      "status": "active"
+    },
+    "control_panel_agents": {
+      "registered": "2026-03-16T21:42:54.529235+00:00",
+      "status": "active"
+    },
+    "errors": {
+      "registered": "2026-03-16T21:42:54.529240+00:00",
+      "status": "active"
+    },
+    "launcher": {
+      "registered": "2026-03-16T21:42:54.529245+00:00",
+      "status": "active"
+    },
+    "maintenance": {
+      "registered": "2026-03-16T21:42:54.529249+00:00",
+      "status": "active"
+    },
+    "marketplace": {
+      "registered": "2026-03-16T21:42:54.529254+00:00",
+      "status": "active"
+    },
+    "projects": {
+      "registered": "2026-03-16T21:42:54.529258+00:00",
+      "status": "active"
+    },
+    "registry": {
+      "registered": "2026-03-16T21:42:54.529262+00:00",
+      "status": "active"
+    },
+    "revenue": {
+      "registered": "2026-03-16T21:42:54.529267+00:00",
+      "status": "active"
+    },
+    "runtime": {
+      "registered": "2026-03-16T21:42:54.529271+00:00",
+      "status": "active"
+    },
+    "scanner": {
+      "registered": "2026-03-16T21:42:54.529276+00:00",
+      "status": "active"
+    },
+    "skills": {
+      "registered": "2026-03-16T21:42:54.529280+00:00",
+      "status": "active"
+    },
+    "strategist": {
+      "registered": "2026-03-16T21:42:54.529284+00:00",
+      "status": "active"
+    },
+    "system": {
+      "registered": "2026-03-16T21:42:54.529289+00:00",
+      "status": "active"
+    },
+    "tools": {
+      "registered": "2026-03-16T21:42:54.529293+00:00",
+      "status": "active"
+    }
+  },
+  "tools": {
+    "personal": {
+      "registered": "2026-03-16T21:42:54.529368+00:00",
+      "status": "active"
+    }
+  },
+  "workers": {
+    "__init__.py": {
+      "registered": "2026-03-16T21:42:54.529299+00:00",
+      "status": "active"
+    },
+    "build_worker.py": {
+      "registered": "2026-03-16T21:42:54.529303+00:00",
+      "status": "active"
+    },
+    "cleanup_worker.py": {
+      "registered": "2026-03-16T21:42:54.529308+00:00",
+      "status": "active"
+    },
+    "ecosystem_worker.py": {
+      "registered": "2026-03-16T21:42:54.529312+00:00",
+      "status": "active"
+    },
+    "opportunity_worker.py": {
+      "registered": "2026-03-16T21:42:54.529316+00:00",
+      "status": "active"
+    },
+    "promotion_worker.py": {
+      "registered": "2026-03-16T21:42:54.529321+00:00",
+      "status": "active"
+    }
+  },
+  "scanners": {
+    "__init__.py": {
+      "registered": "2026-03-16T21:42:54.529327+00:00",
+      "status": "active"
+    },
+    "automation_scanner.py": {
+      "registered": "2026-03-16T21:42:54.529332+00:00",
+      "status": "active"
+    },
+    "generate_ecosystem_map.py": {
+      "registered": "2026-03-16T21:42:54.529336+00:00",
+      "status": "active"
+    },
+    "industry_scanner.py": {
+      "registered": "2026-03-16T21:42:54.529342+00:00",
+      "status": "active"
+    },
+    "niche_scanner.py": {
+      "registered": "2026-03-16T21:42:54.529347+00:00",
+      "status": "active"
+    },
+    "registry_sync.py": {
+      "registered": "2026-03-16T21:53:23.418117+00:00",
+      "status": "active"
+    }
+  },
+  "signals": {
+    "competitor-signals": {
+      "registered": "2026-03-16T21:42:54.529352+00:00",
+      "status": "active"
+    },
+    "customer-requests": {
+      "registered": "2026-03-16T21:42:54.529357+00:00",
+      "status": "active"
+    },
+    "trends": {
+      "registered": "2026-03-16T21:42:54.529362+00:00",
+      "status": "active"
+    }
+  },
+  "providers": {
+    "claude_provider.py": {
+      "registered": "2026-03-16T21:42:54.529373+00:00",
+      "status": "active"
+    },
+    "ollama_provider.py": {
+      "registered": "2026-03-16T21:42:54.529379+00:00",
+      "status": "active"
+    },
+    "openai_provider.py": {
+      "registered": "2026-03-16T21:42:54.529384+00:00",
+      "status": "active"
+    },
+    "provider_router.py": {
+      "registered": "2026-03-16T21:42:54.529389+00:00",
+      "status": "active"
+    }
+  },
+  "runtime_services": {
+    "__init__.py": {
+      "registered": "2026-03-16T21:42:54.529394+00:00",
+      "status": "active"
+    },
+    "claude_bridge.py": {
+      "registered": "2026-03-16T21:42:54.529399+00:00",
+      "status": "active"
+    },
+    "event_bus.py": {
+      "registered": "2026-03-16T21:42:54.529403+00:00",
+      "status": "active"
+    },
+    "job_queue.py": {
+      "registered": "2026-03-16T21:42:54.529407+00:00",
+      "status": "active"
+    },
+    "ollama_bridge.py": {
+      "registered": "2026-03-16T21:42:54.529412+00:00",
+      "status": "active"
+    },
+    "openai_bridge.py": {
+      "registered": "2026-03-16T21:42:54.529416+00:00",
+      "status": "active"
+    },
+    "orchestrator.py": {
+      "registered": "2026-03-16T21:42:54.529421+00:00",
+      "status": "active"
+    },
+    "provider_router.py": {
+      "registered": "2026-03-16T21:42:54.529427+00:00",
+      "status": "active"
+    },
+    "runtime_logger.py": {
+      "registered": "2026-03-16T21:42:54.529431+00:00",
+      "status": "active"
+    },
+    "agent_loader.py": {
+      "registered": "2026-03-16T21:53:23.418151+00:00",
+      "status": "active"
+    },
+    "model_gateway.py": {
+      "registered": "2026-03-16T22:07:50.035929+00:00",
+      "status": "active"
+    },
+    "provider_registry.py": {
+      "registered": "2026-03-16T22:07:50.035955+00:00",
+      "status": "active"
+    },
+    "task_classifier.py": {
+      "registered": "2026-03-16T22:07:50.035962+00:00",
+      "status": "active"
+    }
+  },
+  "marketplace_engines": {
+    "__init__.py": {
+      "registered": "2026-03-16T21:42:54.529436+00:00",
+      "status": "active"
+    },
+    "bundle_engine.py": {
+      "registered": "2026-03-16T21:42:54.529441+00:00",
+      "status": "active"
+    },
+    "install_engine.py": {
+      "registered": "2026-03-16T21:42:54.529445+00:00",
+      "status": "active"
+    },
+    "publish_engine.py": {
+      "registered": "2026-03-16T21:42:54.529449+00:00",
+      "status": "active"
+    },
+    "status_engine.py": {
+      "registered": "2026-03-16T21:42:54.529453+00:00",
+      "status": "active"
+    },
+    "sync_engine.py": {
+      "registered": "2026-03-16T21:42:54.529458+00:00",
+      "status": "active"
+    }
+  }
+}

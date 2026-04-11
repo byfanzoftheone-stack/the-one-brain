@@ -1,0 +1,12 @@
+{
+  "app": "little-pro",
+  "module_count": 4,
+  "modules": [
+    "module-wall",
+    "builder-core",
+    "agent-labs",
+    "warehouse-sync"
+  ],
+  "status": "pass",
+  "notes": "ok"
+}

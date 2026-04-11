@@ -1,0 +1,16 @@
+/data/data/com.termux/files/home
+/data/data/com.termux/files/home/projects/Grandma-Carols-cook-book
+/data/data/com.termux/files/home/projects/Backdoor-help
+/data/data/com.termux/files/home/projects/THE-ONE-BRAIN
+/data/data/com.termux/files/home/projects/THE-ONE-MARKET
+/data/data/com.termux/files/home/projects/The-one-by-fanzoftheone-clean
+/data/data/com.termux/files/home/projects/backend
+/data/data/com.termux/files/home/projects/Raven
+/data/data/com.termux/files/home/projects/The-one-by-fanzoftheone-main-git
+/data/data/com.termux/files/home/projects/Missionary-travels
+/data/data/com.termux/files/home/projects/SubiLife
+/data/data/com.termux/files/home/projects/Buildhub-Agent-marketplace
+/data/data/com.termux/files/home/projects/Play-Better-
+/data/data/com.termux/files/home/projects/nmh
+/data/data/com.termux/files/home/projects/Studio-
+/data/data/com.termux/files/home/projects/The-one-by-fanzoftheone-

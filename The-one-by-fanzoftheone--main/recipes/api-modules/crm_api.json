@@ -1,0 +1,5 @@
+{
+"endpoint": "/api/leads",
+"methods": ["GET","POST","DELETE"],
+"auth": true
+}

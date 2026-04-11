@@ -1,0 +1,7 @@
+{
+  "name": "fighters",
+  "category": "community-app",
+  "modules": ["email-agent", "content-agent"],
+  "ui": ["home", "contracts", "training", "coach-chat", "fight-board"],
+  "marketplace_category": "community"
+}

@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>THE ONE Control Panel</title>
+  <style>
+    body{
+      margin:0;
+      font-family:Arial,sans-serif;
+      background:#0b1220;
+      color:#e5e7eb;
+    }
+    .wrap{
+      max-width:1000px;
+      margin:0 auto;
+      padding:20px;
+    }
+    h1{
+      margin:0 0 16px;
+      font-size:28px;
+    }
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:16px;
+    }
+    .card{
+      background:#111827;
+      border:1px solid #1f2937;
+      border-radius:14px;
+      padding:16px;
+      box-shadow:0 10px 30px rgba(0,0,0,.25);
+    }
+    .label{
+      font-size:12px;
+      color:#93c5fd;
+      text-transform:uppercase;
+      margin-bottom:8px;
+    }
+    .value{
+      white-space:pre-wrap;
+      word-break:break-word;
+      font-size:14px;
+      line-height:1.45;
+    }
+    input, textarea, button{
+      width:100%;
+      box-sizing:border-box;
+      border-radius:10px;
+      border:1px solid #374151;
+      background:#0f172a;
+      color:#e5e7eb;
+      padding:12px;
+      font-size:14px;
+    }
+    textarea{
+      min-height:100px;
+      resize:vertical;
+    }
+    button{
+      background:#2563eb;
+      border:none;
+      cursor:pointer;
+      font-weight:700;
+      margin-top:10px;
+    }
+    button:hover{
+      background:#1d4ed8;
+    }
+    .row{
+      display:grid;
+      gap:10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>THE ONE Control Panel</h1>
+
+    <div class="grid">
+      <div class="card">
+        <div class="label">Node Status</div>
+        <div id="status" class="value">loading...</div>
+      </div>
+
+      <div class="card">
+        <div class="label">Warehouse Memory</div>
+        <div id="memory" class="value">loading...</div>
+      </div>
+
+      <div class="card">
+        <div class="label">Run Goal</div>
+        <div class="row">
+          <input id="goal" value="list files" />
+          <button onclick="runGoal()">Run Goal</button>
+          <div id="runResult" class="value"></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="label">Reason</div>
+        <div class="row">
+          <textarea id="prompt">what does this node do</textarea>
+          <button onclick="reason()">Reason</button>
+          <div id="reasonResult" class="value"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    async function loadStatus(){
+      const r = await fetch('/status');
+      const data = await r.json();
+      document.getElementById('status').textContent = JSON.stringify(data, null, 2);
+    }
+
+    async function loadMemory(){
+      const r = await fetch('/memory');
+      const data = await r.json();
+      document.getElementById('memory').textContent = JSON.stringify(data, null, 2);
+    }
+
+    async function runGoal(){
+      const goal = document.getElementById('goal').value;
+      const r = await fetch('/run', {
+        method:'POST',
+        headers:{'Content-Type':'application/json'},
+        body:JSON.stringify({goal})
+      });
+      const data = await r.json();
+      document.getElementById('runResult').textContent = JSON.stringify(data, null, 2);
+      loadMemory();
+    }
+
+    async function reason(){
+      const prompt = document.getElementById('prompt').value;
+      const r = await fetch('/reason', {
+        method:'POST',
+        headers:{'Content-Type':'application/json'},
+        body:JSON.stringify({prompt})
+      });
+      const data = await r.json();
+      document.getElementById('reasonResult').textContent = JSON.stringify(data, null, 2);
+    }
+
+    loadStatus();
+    loadMemory();
+  </script>
+</body>
+</html>

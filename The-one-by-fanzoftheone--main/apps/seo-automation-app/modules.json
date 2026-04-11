@@ -1,0 +1,7 @@
+{
+  "name": "seo-automation-app",
+  "modules": [
+    "seo-agent",
+    "content-agent"
+  ]
+}

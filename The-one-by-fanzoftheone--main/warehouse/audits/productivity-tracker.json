@@ -1,0 +1,14 @@
+{
+  "app": "productivity-tracker",
+  "module_count": 6,
+  "modules": [
+    "daily-ledger",
+    "session-starter",
+    "session-closer",
+    "opportunity-capture",
+    "no-drift-check",
+    "mastery-loop"
+  ],
+  "status": "pass",
+  "notes": "ok"
+}

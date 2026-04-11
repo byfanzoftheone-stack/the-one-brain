@@ -1,0 +1,8 @@
+{
+  "task": "Say exactly: Ollama runtime bridge is active inside The One.",
+  "model": "llama3",
+  "status": "fail",
+  "output": "",
+  "error": "ollama command not found",
+  "timestamp": "2026-03-13T18:02:18.937729+00:00"
+}

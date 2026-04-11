@@ -1,0 +1,39 @@
+{
+  "reports": [
+    {
+      "app": "content-machine",
+      "exists": true,
+      "has_manifest": true,
+      "modules_valid": true,
+      "status": "pass"
+    },
+    {
+      "app": "email-growth-engine",
+      "exists": true,
+      "has_manifest": true,
+      "modules_valid": true,
+      "status": "pass"
+    },
+    {
+      "app": "marketing-automation-app",
+      "exists": true,
+      "has_manifest": true,
+      "modules_valid": true,
+      "status": "pass"
+    },
+    {
+      "app": "productivity-tracker",
+      "exists": true,
+      "has_manifest": true,
+      "modules_valid": true,
+      "status": "pass"
+    },
+    {
+      "app": "seo-automation-app",
+      "exists": true,
+      "has_manifest": true,
+      "modules_valid": true,
+      "status": "pass"
+    }
+  ]
+}

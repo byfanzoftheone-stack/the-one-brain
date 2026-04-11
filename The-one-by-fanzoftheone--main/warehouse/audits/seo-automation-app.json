@@ -1,0 +1,10 @@
+{
+  "app": "seo-automation-app",
+  "module_count": 2,
+  "modules": [
+    "seo-agent",
+    "content-agent"
+  ],
+  "status": "fail",
+  "notes": "too few modules"
+}

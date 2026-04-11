@@ -1,0 +1,12 @@
+{
+  "app": "productivity-tracker",
+  "modules": [
+    "daily-ledger",
+    "session-starter",
+    "session-closer",
+    "opportunity-capture",
+    "no-drift-check",
+    "mastery-loop"
+  ],
+  "timestamp": "2026-03-13"
+}

@@ -1,0 +1,15 @@
+{
+  "slug": "email-growth-engine",
+  "name": "Email Growth Engine",
+  "title": "Email Growth Engine — AI Email Marketing",
+  "description": "AI-powered email sequences, templates, personalization, and analytics.",
+  "category": "Marketing",
+  "price_monthly": 79,
+  "price_setup": 0,
+  "currency": "USD",
+  "status": "active",
+  "stack": ["FastAPI", "Python", "email-agent", "marketing-agent"],
+  "modules": ["email-agent", "marketing-agent"],
+  "locked": true,
+  "created_at": "2026-03-25T00:00:00Z"
+}

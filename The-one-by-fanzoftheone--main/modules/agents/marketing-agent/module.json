@@ -1,0 +1,9 @@
+{
+  "name": "Marketing Agent",
+  "id": "marketing-agent",
+  "type": "agent-module",
+  "category": "marketing",
+  "icon": "megaphone",
+  "description": "AI marketing assistant for campaigns, positioning, and offers.",
+  "tools": ["campaign-planning", "offer-generator", "audience-messaging"]
+}

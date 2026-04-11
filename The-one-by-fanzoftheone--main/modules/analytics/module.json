@@ -1,0 +1,11 @@
+{
+  "id": "analytics",
+  "name": "Analytics",
+  "category": "service-saas",
+  "icon": "chart-bar",
+  "description": "Reporting and analytics module",
+  "routes": ["/analytics"],
+  "builderVisible": true,
+  "marketplaceVisible": true,
+  "agentUsable": true
+}

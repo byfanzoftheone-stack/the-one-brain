@@ -1,0 +1,16 @@
+{
+  "slug": "three-six-nine-builder",
+  "name": "3-6-9 Builder",
+  "title": "3-6-9 Builder — Learn to Build by Building",
+  "description": "Set what you want to build. The teacher agent gives you 3 code block choices. Pick one. Learn as you go. All code stored and recycled. Never write from scratch again.",
+  "category": "Developer Tools",
+  "price_monthly": 59,
+  "price_setup": 0,
+  "currency": "USD",
+  "status": "active",
+  "stack": ["Next.js", "FastAPI", "Claude", "Python"],
+  "modules": ["ai-tools", "analytics"],
+  "locked": true,
+  "featured": true,
+  "created_at": "2026-03-25T00:00:00Z"
+}

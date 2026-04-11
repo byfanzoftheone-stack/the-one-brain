@@ -1,0 +1,9 @@
+{
+  "name": "Content Agent",
+  "id": "content-agent",
+  "type": "agent-module",
+  "category": "content",
+  "icon": "file-text",
+  "description": "AI content creator for posts, scripts, captions, and ideas.",
+  "tools": ["post-writer", "caption-generator", "script-builder"]
+}

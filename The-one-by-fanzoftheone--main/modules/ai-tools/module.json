@@ -1,0 +1,11 @@
+{
+  "id": "ai-tools",
+  "name": "AI Tools",
+  "category": "ai",
+  "icon": "sparkles",
+  "description": "AI-powered tools and assistant module",
+  "routes": ["/ai-tools"],
+  "builderVisible": true,
+  "marketplaceVisible": true,
+  "agentUsable": true
+}

@@ -1,0 +1,7 @@
+{
+  "name": "content-machine",
+  "modules": [
+    "content-agent",
+    "news-agent"
+  ]
+}

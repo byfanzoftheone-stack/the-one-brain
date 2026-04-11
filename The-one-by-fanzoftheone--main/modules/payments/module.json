@@ -1,0 +1,11 @@
+{
+  "id": "payments",
+  "name": "Payments",
+  "category": "service-saas",
+  "icon": "credit-card",
+  "description": "Billing and payment processing module",
+  "routes": ["/payments"],
+  "builderVisible": true,
+  "marketplaceVisible": true,
+  "agentUsable": true
+}

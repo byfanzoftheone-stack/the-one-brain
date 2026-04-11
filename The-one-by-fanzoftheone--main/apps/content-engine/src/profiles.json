@@ -1,0 +1,34 @@
+{
+  "avatars": {
+    "the_fixer": {
+      "id": "avatar_male_01",
+      "name": "The Fixer",
+      "archetype": "The Rugged Savant",
+      "gender": "male",
+      "voice": {
+        "provider": "elevenlabs",
+        "tone": "Deep, raspy, gravelly, authoritative",
+        "stability": 0.45,
+        "similarity_boost": 0.80,
+        "recommended_voice": "Marcus"
+      },
+      "visual_prompt": "A hyper-realistic cinematic medium shot of a ruggedly handsome man in his early 30s. Sharp jawline, messy dark hair, 3-day scruffy stubble. Worn charcoal grey henley shirt, sleeves rolled up, vascular forearms. Dramatic garage chiaroscuro lighting, cool blue backlights, warm key light. Shot on Arri Alexa, 85mm lens, f/1.8, 8k resolution. Intense and competent expression.",
+      "visual_tags": ["scruffy beard", "piercing eyes", "rolled up sleeves", "vascular forearms", "intense focus"]
+    },
+    "the_siren": {
+      "id": "avatar_female_01",
+      "name": "The Siren",
+      "archetype": "The Glamour Expert",
+      "gender": "female",
+      "voice": {
+        "provider": "elevenlabs",
+        "tone": "Breathless, flirty, smooth, high-fidelity",
+        "stability": 0.35,
+        "similarity_boost": 0.90,
+        "recommended_voice": "Bella"
+      },
+      "visual_prompt": "A hyper-realistic cinematic medium shot of a stunningly attractive woman in her mid 20s. Fit, voluptuous physique. Tight white thermal waffle-knit shirt, unbuttoned at top. Glowing sun-kissed skin, long tousled beach-wave hair. Looking directly at camera with playful flirtatious smirk. Golden hour sunset lighting, halo-like around hair. Shot on Kodak Portra 400, 50mm lens, high fashion color grading.",
+      "visual_tags": ["tight thermal", "unbuttoned henley", "hourglass figure", "flawless skin", "playful smirk"]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "rankings": [
+    {
+      "app": "email-growth-engine",
+      "industry": "marketing",
+      "price_monthly": 79,
+      "target_customers": 150,
+      "estimated_mrr": 11850,
+      "priority_rank": 1
+    },
+    {
+      "app": "marketing-automation-app",
+      "industry": "marketing",
+      "price_monthly": 79,
+      "target_customers": 150,
+      "estimated_mrr": 11850,
+      "priority_rank": 2
+    },
+    {
+      "app": "seo-automation-app",
+      "industry": "marketing",
+      "price_monthly": 79,
+      "target_customers": 150,
+      "estimated_mrr": 11850,
+      "priority_rank": 3
+    },
+    {
+      "app": "content-machine",
+      "industry": "content",
+      "price_monthly": 59,
+      "target_customers": 150,
+      "estimated_mrr": 8850,
+      "priority_rank": 4
+    },
+    {
+      "app": "productivity-tracker",
+      "industry": "productivity",
+      "price_monthly": 29,
+      "target_customers": 200,
+      "estimated_mrr": 5800,
+      "priority_rank": 5
+    }
+  ]
+}

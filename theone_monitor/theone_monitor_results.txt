@@ -1,0 +1,11 @@
+/health → 404
+/api/health → 200
+/api/orchestrator/status → 200
+/api/agents/status → 404
+/api/modules → 200
+/api/apps → 404
+/api/warehouse/stats → 404
+/api/warehouse/code-bank → 404
+/api/payments/subscription/test@example.com → 404
+/api/seo/keywords → 404
+/api/system/overview → 404

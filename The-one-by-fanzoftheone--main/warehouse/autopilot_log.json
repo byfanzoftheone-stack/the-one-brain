@@ -1,0 +1,223 @@
+{
+  "events": [
+    {
+      "time": "2026-03-13 05:05:37.078093",
+      "event": {
+        "action": "autopilot_app_created",
+        "app": "marketing-automation-app",
+        "modules": [
+          "seo-agent",
+          "content-agent",
+          "email-agent"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-13 08:52:26.604616",
+      "event": {
+        "action": "autopilot_app_created",
+        "app": "marketing-automation-app",
+        "modules": [
+          "seo-agent",
+          "content-agent",
+          "email-agent"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-13 08:52:26.685194",
+      "event": {
+        "action": "autopilot_app_created",
+        "app": "marketing-automation-app",
+        "modules": [
+          "seo-agent",
+          "content-agent",
+          "email-agent"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-13 08:52:26.768272",
+      "event": {
+        "action": "autopilot_app_created",
+        "app": "marketing-automation-app",
+        "modules": [
+          "seo-agent",
+          "content-agent",
+          "email-agent"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-13 08:54:43.435441",
+      "event": {
+        "action": "autopilot_app_created",
+        "app": "marketing-automation-app",
+        "modules": [
+          "seo-agent",
+          "content-agent",
+          "email-agent"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-13 08:54:43.522946",
+      "event": {
+        "action": "autopilot_app_created",
+        "app": "marketing-automation-app",
+        "modules": [
+          "seo-agent",
+          "content-agent",
+          "email-agent"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-13 08:54:43.608743",
+      "event": {
+        "action": "autopilot_app_created",
+        "app": "marketing-automation-app",
+        "modules": [
+          "seo-agent",
+          "content-agent",
+          "email-agent"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-13 08:55:15.382066",
+      "event": {
+        "action": "autopilot_app_created",
+        "app": "marketing-automation-app",
+        "modules": [
+          "seo-agent",
+          "content-agent",
+          "email-agent"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-13 08:55:15.468131",
+      "event": {
+        "action": "autopilot_app_created",
+        "app": "marketing-automation-app",
+        "modules": [
+          "seo-agent",
+          "content-agent",
+          "email-agent"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-13 08:55:15.551722",
+      "event": {
+        "action": "autopilot_app_created",
+        "app": "marketing-automation-app",
+        "modules": [
+          "seo-agent",
+          "content-agent",
+          "email-agent"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-13T09:10:23.564891+00:00",
+      "event": {
+        "action": "autopilot_app_created",
+        "app": "seo-automation-app",
+        "modules": [
+          "seo-agent",
+          "content-agent"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-13T09:10:23.657964+00:00",
+      "event": {
+        "action": "autopilot_app_created",
+        "app": "email-growth-engine",
+        "modules": [
+          "email-agent",
+          "marketing-agent"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-13T09:10:23.722210+00:00",
+      "event": {
+        "action": "autopilot_app_created",
+        "app": "content-machine",
+        "modules": [
+          "content-agent",
+          "news-agent"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-13T09:12:26.071757+00:00",
+      "event": {
+        "action": "autopilot_app_created",
+        "app": "seo-automation-app",
+        "modules": [
+          "seo-agent",
+          "content-agent"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-13T09:12:26.180331+00:00",
+      "event": {
+        "action": "autopilot_app_created",
+        "app": "email-growth-engine",
+        "modules": [
+          "email-agent",
+          "marketing-agent"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-13T09:12:26.285437+00:00",
+      "event": {
+        "action": "autopilot_app_created",
+        "app": "content-machine",
+        "modules": [
+          "content-agent",
+          "news-agent"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-13T13:25:37.776438+00:00",
+      "event": {
+        "action": "autopilot_app_created",
+        "app": "seo-automation-app",
+        "modules": [
+          "seo-agent",
+          "content-agent"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-13T13:25:37.866455+00:00",
+      "event": {
+        "action": "autopilot_app_created",
+        "app": "email-growth-engine",
+        "modules": [
+          "email-agent",
+          "marketing-agent"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-13T13:25:37.965279+00:00",
+      "event": {
+        "action": "autopilot_app_created",
+        "app": "content-machine",
+        "modules": [
+          "content-agent",
+          "news-agent"
+        ]
+      }
+    }
+  ]
+}

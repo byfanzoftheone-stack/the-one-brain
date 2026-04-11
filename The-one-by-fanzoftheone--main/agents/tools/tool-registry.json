@@ -1,0 +1,71 @@
+{
+  "version": "1.0",
+  "system": "THE ONE Tool Registry",
+  "tools": [
+    {
+      "id": "read-file",
+      "zone": "repo",
+      "purpose": "Read file content from repo"
+    },
+    {
+      "id": "write-file",
+      "zone": "repo",
+      "purpose": "Write or update file content in repo"
+    },
+    {
+      "id": "scan-modules",
+      "zone": "repo",
+      "purpose": "Scan modules and module manifests"
+    },
+    {
+      "id": "create-app",
+      "zone": "builder",
+      "purpose": "Generate a new app container"
+    },
+    {
+      "id": "install-module",
+      "zone": "builder",
+      "purpose": "Install a module into an app"
+    },
+    {
+      "id": "export-app",
+      "zone": "builder",
+      "purpose": "Export app package for deployment"
+    },
+    {
+      "id": "save-pattern",
+      "zone": "warehouse",
+      "purpose": "Store successful pattern in warehouse"
+    },
+    {
+      "id": "save-discovery",
+      "zone": "warehouse",
+      "purpose": "Store agent discovery or insight"
+    },
+    {
+      "id": "run-test",
+      "zone": "runtime",
+      "purpose": "Run validation or test cycle"
+    },
+    {
+      "id": "save-good-code",
+      "zone": "runtime",
+      "purpose": "Store validated code in backpack or warehouse"
+    },
+    {
+      "id": "github-push",
+      "zone": "integrations",
+      "purpose": "Push committed changes to GitHub"
+    },
+    {
+      "id": "railway-deploy",
+      "zone": "integrations",
+      "purpose": "Trigger Railway deployment workflow"
+    },
+    {
+      "id": "vercel-deploy",
+      "zone": "integrations",
+      "purpose": "Trigger Vercel deployment workflow"
+    }
+  ]
+}

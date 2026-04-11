@@ -1,0 +1,11 @@
+{
+  "id": "scheduling",
+  "name": "Scheduling",
+  "category": "service-saas",
+  "icon": "calendar",
+  "description": "Booking and schedule management module",
+  "routes": ["/schedule"],
+  "builderVisible": true,
+  "marketplaceVisible": true,
+  "agentUsable": true
+}

@@ -1,0 +1,7 @@
+{
+  "name": "local-service-demand",
+  "type": "trend-signal",
+  "source": "founder-observation",
+  "markets": ["roofing", "dispatch", "pool-service", "cleaning", "property-management"],
+  "status": "active"
+}

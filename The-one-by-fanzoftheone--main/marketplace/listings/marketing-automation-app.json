@@ -1,0 +1,15 @@
+{
+  "slug": "marketing-automation-app",
+  "name": "Marketing Automation",
+  "title": "Marketing Automation — AI Growth Stack",
+  "description": "SEO, content, and email automation in one stack. AI agents run your growth engine 24/7.",
+  "category": "Marketing",
+  "price_monthly": 99,
+  "price_setup": 0,
+  "currency": "USD",
+  "status": "active",
+  "stack": ["FastAPI", "Python", "seo-agent", "content-agent", "email-agent"],
+  "modules": ["seo-agent", "content-agent", "email-agent"],
+  "locked": true,
+  "created_at": "2026-03-25T00:00:00Z"
+}
