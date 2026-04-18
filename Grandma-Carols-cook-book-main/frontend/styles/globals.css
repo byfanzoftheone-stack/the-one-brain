@@ -1,0 +1,180 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Lora:ital,wght@0,400;0,500;1,400&display=swap');
+
+:root {
+  --cream: #fdf8f0;
+  --cream-100: #faf0dc;
+  --cream-200: #f5deb3;
+  --brown: #5c3d2e;
+  --brown-dark: #2d1b0e;
+  --gold: #c9973a;
+  --rose: #c47c6a;
+  --sage: #7a8c6e;
+  --muted: #9b8a7a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--cream);
+  color: var(--brown-dark);
+  font-family: 'Lora', Georgia, serif;
+  min-height: 100vh;
+  background-image:
+    radial-gradient(ellipse at 20% 0%, rgba(201, 151, 58, 0.08) 0%, transparent 60%),
+    radial-gradient(ellipse at 80% 100%, rgba(196, 124, 106, 0.06) 0%, transparent 60%);
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+/* Decorative divider */
+.divider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--gold);
+  font-size: 18px;
+}
+.divider::before,
+.divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+}
+
+/* Recipe card hover */
+.recipe-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 2px 20px rgba(93, 61, 46, 0.1);
+}
+.recipe-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(93, 61, 46, 0.18);
+}
+
+/* Golden badge */
+.badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+/* Bottom nav bar — mobile first */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(253, 248, 240, 0.96);
+  backdrop-filter: blur(12px);
+  border-top: 1px solid rgba(201, 151, 58, 0.2);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 8px 0 calc(8px + env(safe-area-inset-bottom));
+  z-index: 50;
+}
+
+.bottom-nav a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 10px;
+  font-family: 'Lora', serif;
+  transition: color 0.2s;
+  padding: 4px 8px;
+}
+
+.bottom-nav a.active,
+.bottom-nav a:hover {
+  color: var(--gold);
+}
+
+.bottom-nav .nav-icon {
+  font-size: 22px;
+  line-height: 1;
+}
+
+/* Page padding for bottom nav */
+.page-content {
+  padding-bottom: calc(80px + env(safe-area-inset-bottom));
+}
+
+/* Staggered animation delay helpers */
+.delay-1 { animation-delay: 0.1s; }
+.delay-2 { animation-delay: 0.2s; }
+.delay-3 { animation-delay: 0.3s; }
+.delay-4 { animation-delay: 0.4s; }
+
+/* Glassmorphic card */
+.glass-card {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(201, 151, 58, 0.15);
+  border-radius: 16px;
+}
+
+/* Media thumbnail */
+.media-thumb {
+  width: 100%;
+  aspect-ratio: 16/10;
+  object-fit: cover;
+  background: var(--cream-200);
+}
+
+/* Animated underline for headings */
+.underline-gold {
+  position: relative;
+  display: inline-block;
+}
+.underline-gold::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, var(--gold), var(--rose));
+  border-radius: 2px;
+}
+
+/* Scroll animation — set opacity 0 initial, JS adds .visible */
+.reveal {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Category colors */
+.cat-breakfast  { background: #fff3cd; color: #856404; }
+.cat-holiday    { background: #f8d7da; color: #842029; }
+.cat-comfort    { background: #d1e7dd; color: #0f5132; }
+.cat-baking     { background: #cff4fc; color: #055160; }
+.cat-snacks     { background: #e2d9f3; color: #432874; }
+.cat-special    { background: #fde8d8; color: #7c3d11; }
