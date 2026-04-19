@@ -1,7 +1,0 @@
-{
-  "name": "example-error-receipt",
-  "failed_step": "placeholder",
-  "why": "replace with real failure when one occurs",
-  "fixed_by": "manual update or future auto-hook",
-  "timestamp": "2026-03-13T13:37:51.743878+00:00"
-}

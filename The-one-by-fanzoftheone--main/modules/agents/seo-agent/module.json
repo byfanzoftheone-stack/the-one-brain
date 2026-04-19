@@ -1,9 +1,0 @@
-{
-  "name": "SEO Agent",
-  "id": "seo-agent",
-  "type": "agent-module",
-  "category": "marketing",
-  "icon": "search",
-  "description": "AI SEO assistant for keyword strategy, optimization, and audits.",
-  "tools": ["keyword-analysis", "seo-audit", "meta-generator"]
-}

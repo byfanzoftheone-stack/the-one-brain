@@ -1,6 +1,0 @@
-#!/bin/bash
-termux-wake-lock
-echo "🚀 Termux AI Coding Agent v∞ started"
-echo "Type commands like: 'hey agent, explain this file' or 'agent edit main.py add login'"
-echo "Just talk naturally — the agent understands."
-exec \~/termux-agent.sh --chat-mode

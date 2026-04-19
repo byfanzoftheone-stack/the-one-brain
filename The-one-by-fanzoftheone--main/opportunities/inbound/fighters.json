@@ -1,9 +1,0 @@
-{
-  "name": "fighters",
-  "type": "community-app",
-  "industry": "martial-arts",
-  "source": "founder",
-  "problem": "Fighters need contracts, training logs, coach communication, and fight opportunity management.",
-  "priority": "high",
-  "status": "inbound"
-}

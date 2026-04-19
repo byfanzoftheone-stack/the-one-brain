@@ -1,8 +1,0 @@
-{
-  "timestamp": "2026-01-01T00:00:00Z",
-  "event": "system_boot",
-  "data": {
-    "status": "online",
-    "node": "local"
-  }
-}

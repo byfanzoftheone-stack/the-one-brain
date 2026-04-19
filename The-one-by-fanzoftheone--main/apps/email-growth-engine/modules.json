@@ -1,7 +1,0 @@
-{
-  "name": "email-growth-engine",
-  "modules": [
-    "email-agent",
-    "marketing-agent"
-  ]
-}

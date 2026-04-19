@@ -1,9 +1,0 @@
-{
-  "name": "Email Agent",
-  "id": "email-agent",
-  "type": "agent-module",
-  "category": "communication",
-  "icon": "mail",
-  "description": "AI email assistant for sequences, follow-ups, and outreach.",
-  "tools": ["email-sequences", "follow-up-writer", "subject-line-generator"]
-}

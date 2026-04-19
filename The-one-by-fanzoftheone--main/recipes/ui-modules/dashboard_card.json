@@ -1,5 +1,0 @@
-{
-"component": "dashboard_card",
-"framework": "react",
-"props": ["title","body","icon"]
-}

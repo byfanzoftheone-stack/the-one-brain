@@ -1,9 +1,0 @@
-{
-  "name": "ai-content-suite",
-  "modules": [
-    "content-agent",
-    "seo-agent",
-    "prompts",
-    "reports"
-  ]
-}

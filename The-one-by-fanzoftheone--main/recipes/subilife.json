@@ -1,7 +1,0 @@
-{
-  "name": "subilife",
-  "category": "community-app",
-  "modules": ["content-agent", "news-agent"],
-  "ui": ["home", "garage", "builds", "events", "media"],
-  "marketplace_category": "community"
-}

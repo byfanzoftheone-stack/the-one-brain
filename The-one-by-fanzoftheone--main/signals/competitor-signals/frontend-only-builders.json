@@ -1,6 +1,0 @@
-{
-  "name": "frontend-only-builders",
-  "type": "competitor-signal",
-  "insight": "Many builders stop at frontend shells and do not provide full backend-connected ecosystems.",
-  "status": "tracked"
-}

@@ -1,5 +1,0 @@
-{
-  "name": "service-saas-stack",
-  "modules": ["crm", "scheduling", "payments", "analytics"],
-  "fits": ["roofing", "cleaning", "dispatch", "property-management"]
-}

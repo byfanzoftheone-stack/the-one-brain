@@ -1,7 +1,0 @@
-{
-  "name": "play-better",
-  "category": "community-app",
-  "modules": ["content-agent", "news-agent", "email-agent"],
-  "ui": ["home", "tournaments", "rankings", "notifications", "profile"],
-  "marketplace_category": "community"
-}
