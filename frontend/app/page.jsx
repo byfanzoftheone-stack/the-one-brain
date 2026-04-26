@@ -33,7 +33,7 @@ const DISPLAY = "Georgia, serif";
 async function callClaude(messages, system = "", fast = false) {
   const model = fast ? "claude-haiku-4-5-20251001" : "claude-sonnet-4-6";
   try {
-    const r = await fetch("https://api.anthropic.com/v1/messages", {
+    const r = await fetch("/api/claude", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ model, max_tokens: 1000, system: system || undefined, messages }),
