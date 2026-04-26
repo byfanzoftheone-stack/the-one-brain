@@ -866,7 +866,7 @@ export default function FanzOSMasterBrain() {
           <span style={{ color: T.dim, fontSize: 14, marginLeft: 12, fontFamily: MONO }}>v5.0 MASTER BRAIN</span>
         </div>
         {bootLines.map((l, i) => (
-          <div key={i} style={{ fontFamily: MONO, fontSize: 12, color: l.color, marginBottom: 5, letterSpacing: 0.5 }}>
+          <div key={i} style={{ fontFamily: MONO, fontSize: 12, color: l.color || T.cyan, marginBottom: 5, letterSpacing: 0.5 }}>
             <span style={{ color: T.dim, marginRight: 8 }}>[{String(i).padStart(2, "0")}]</span>{l.text}
           </div>
         ))}
