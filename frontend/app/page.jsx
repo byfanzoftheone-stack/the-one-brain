@@ -191,7 +191,7 @@ function TheOneMap() {
               />
             );
           })}
-          {nodes.map((n, i) => (
+          {nodes.filter(n => n && n.color).map((n, i) => (
             <g key={n.id} onClick={() => setSelected(selected === n.key ? null : n.key)} style={{ cursor: "pointer" }}>
               <circle cx={n.x} cy={n.y + 5} r="5.5"
                 fill={selected === n.key ? n.color + "44" : T.panel}
