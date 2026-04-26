@@ -97,7 +97,7 @@ export default function FanzOSMasterBrain() {
         <div style={{paddingBottom:16,borderBottom:"1px solid "+T.border,marginBottom:24}}>
           <span style={{color:T.cyan,fontSize:22,fontWeight:"bold",letterSpacing:5,fontFamily:DISPLAY}}>FANZ</span>
           <span style={{color:T.green,fontSize:22,fontWeight:"bold",letterSpacing:5,fontFamily:DISPLAY}}>OS</span>
-          <span style={{color:T.dim,fontFamily:MONO,fontSize:11,marginLeft:12}}>MASTER BRAIN v5.0 · by FanzoftheOne</span>
+          <span style={{color:T.muted,fontFamily:MONO,fontSize:13,marginLeft:12}}>MASTER BRAIN v5.0 · by FanzoftheOne</span>
         </div>
         <Chat />
         <div style={{marginTop:16,color:T.dim,fontFamily:MONO,fontSize:9,letterSpacing:3,textAlign:"center"}}>
