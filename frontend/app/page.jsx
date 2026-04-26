@@ -614,9 +614,9 @@ function KnowledgeVault() {
         {categories.map(c => (
           <button key={c.id} onClick={() => setSelected(c.id)}
             style={{
-              background: selected === c.id ? c.color + "22" : "transparent",
-              border: `1px solid ${selected === c.id ? c.color : T.border}`,
-              color: selected === c.id ? c.color : T.muted,
+              background: selected === c.id ? (c.color || T.cyan) + "22" : "transparent",
+              border: `1px solid ${selected === c.id ? (c.color || T.cyan) : T.border}`,
+              color: selected === c.id ? (c.color || T.cyan) : T.muted,
               fontFamily: MONO, fontSize: 10, padding: "5px 10px", cursor: "pointer", borderRadius: 4,
             }}>
             {c.label}
