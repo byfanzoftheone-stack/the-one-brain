@@ -198,7 +198,7 @@ function TheOneMap() {
                 stroke={n.color}
                 strokeWidth={selected === n.key ? "1.5" : "0.8"}
               />
-              {pulse === i && <circle cx={n.x} cy={n.y + 5} r="7" fill="none" stroke={n.color} strokeWidth="0.4" opacity="0.5" />}
+              
               <text x={n.x} y={n.y + 4.5} textAnchor="middle" fill={n.color} fontSize="2.5" fontFamily={MONO} fontWeight="bold">{n.label.slice(0,5)}</text>
               <text x={n.x} y={n.y + 8} textAnchor="middle" fill={T.muted} fontSize="1.8" fontFamily={MONO}>{n.sub}</text>
             </g>
