@@ -6,7 +6,7 @@ export async function POST(request) {
   try {
     const body = await request.json();
     const { messages, system, fast } = body;
-    const model = fast ? "claude-haiku-4-5-20251001" : "claude-sonnet-4-6";
+    const model = fast ? "claude-haiku-4-5-20251001" : "claude-haiku-4-5-20251001";
     const response = await fetch("https://api.anthropic.com/v1/messages", {
       method: "POST",
       headers: {
