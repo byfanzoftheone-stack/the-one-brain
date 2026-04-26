@@ -582,7 +582,7 @@ function KnowledgeVault() {
     setSearching(false);
   }
 
-  const kb = BRAIN_KNOWLEDGE[selected];
+  const kb = selected ? BRAIN_KNOWLEDGE[selected] : null;
 
   return (
     <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
