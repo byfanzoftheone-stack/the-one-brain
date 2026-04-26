@@ -39,7 +39,7 @@ function Chat() {
         {messages.map((m,i) => (
           <div key={i} style={{display:"flex",gap:10}}>
             <div style={{color:m.role==="user"?T.gold:T.cyan,fontFamily:MONO,fontSize:11,flexShrink:0}}>{m.role==="user"?"YOU":"BRAIN"}</div>
-            <div style={{color:T.text,fontFamily:MONO,fontSize:12,lineHeight:1.6,whiteSpace:"pre-wrap"}}>{m.content}</div>
+            <div style={{color:T.text,fontFamily:MONO,fontSize:14,lineHeight:1.8,whiteSpace:"pre-wrap"}}>{m.content}</div>
           </div>
         ))}
         {loading && <div style={{color:T.cyan,fontFamily:MONO,fontSize:11}}>BRAIN ▌</div>}
