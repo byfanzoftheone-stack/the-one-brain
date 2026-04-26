@@ -1052,10 +1052,238 @@
         "jarvis"
       ],
       "source_ai": "FanzOS"
+    },
+    {
+      "id": "dp001",
+      "category": "PATTERN",
+      "title": "Railway PORT must never be hardcoded",
+      "core": "Setting PORT as a Railway environment variable overrides Railway's dynamic port injection and kills external routing. Always delete PORT from Railway variables and let Railway inject it automatically.",
+      "proof": "DevPilot backend showed 'Application failed to respond' until PORT=3001 variable was deleted from Railway",
+      "code_application": "all Railway Express backends",
+      "compounds_with": [
+        "railway-deployment"
+      ],
+      "confidence": 1.0,
+      "tags": [
+        "railway",
+        "port",
+        "environment",
+        "devpilot",
+        "critical"
+      ]
+    },
+    {
+      "id": "dp002",
+      "category": "PATTERN",
+      "title": "connect-pg-simple createTableIfMissing prevents boot crash",
+      "core": "Session store initialization crashes the entire Express server if the sessions table doesn't exist. Use createTableIfMissing:true to auto-create it on boot.",
+      "proof": "DevPilot backend crashed repeatedly until createTableIfMissing was added",
+      "code_application": "all Express+PostgreSQL backends",
+      "compounds_with": [
+        "postgresql",
+        "sessions"
+      ],
+      "confidence": 1.0,
+      "tags": [
+        "express",
+        "postgresql",
+        "sessions",
+        "crash",
+        "fix"
+      ]
+    },
+    {
+      "id": "dp003",
+      "category": "PATTERN",
+      "title": "DATABASE_URL public proxy URL for Termux external connections",
+      "core": "Railway internal postgres.railway.internal URL only works inside Railway network. From Termux, always use the public proxy URL containing proxy.rlwy.net for database connections.",
+      "proof": "Migration failed with ENOTFOUND postgres.railway.internal until public URL was used",
+      "code_application": "all Railway PostgreSQL migrations from Termux",
+      "compounds_with": [
+        "railway",
+        "postgresql",
+        "termux"
+      ],
+      "confidence": 1.0,
+      "tags": [
+        "railway",
+        "postgres",
+        "termux",
+        "migration",
+        "url"
+      ]
+    },
+    {
+      "id": "dp004",
+      "category": "PATTERN",
+      "title": "ALLOWED_ORIGINS must match exact Vercel subdomain",
+      "core": "Railway CORS ALLOWED_ORIGINS must include the full Vercel URL including any subdomain prefix. A mismatch silently blocks all API calls from the frontend.",
+      "proof": "DevPilot login failed until ALLOWED_ORIGINS was updated to match exact Vercel deployment URL",
+      "code_application": "all Railway+Vercel fullstack apps",
+      "compounds_with": [
+        "cors",
+        "vercel",
+        "railway"
+      ],
+      "confidence": 1.0,
+      "tags": [
+        "cors",
+        "railway",
+        "vercel",
+        "allowed-origins",
+        "login"
+      ]
+    },
+    {
+      "id": "dp005",
+      "category": "PATTERN",
+      "title": "Git PAT must be embedded in remote URL for Termux push",
+      "core": "GitHub authentication from Termux requires the PAT embedded directly in the remote URL: https://username:TOKEN@github.com/org/repo.git. The credential helper alone is insufficient.",
+      "proof": "All git push attempts failed until PAT was embedded in remote URL",
+      "code_application": "all Termux git operations",
+      "compounds_with": [
+        "github",
+        "termux",
+        "auth"
+      ],
+      "confidence": 1.0,
+      "tags": [
+        "git",
+        "github",
+        "termux",
+        "pat",
+        "authentication"
+      ]
+    },
+    {
+      "id": "dp006",
+      "category": "BUILD_METHOD",
+      "title": "Vercel Next.js vulnerability blocks require version upgrade",
+      "core": "Vercel hard-blocks deployment of Next.js versions with known CVEs. Upgrade to latest patched version and delete PORT variable — these are the two most common Vercel deploy blockers.",
+      "proof": "DevPilot frontend blocked on Next.js 15.0.3 CVE until upgraded to 14.2.29",
+      "code_application": "all Vercel Next.js deployments",
+      "compounds_with": [
+        "nextjs",
+        "vercel",
+        "security"
+      ],
+      "confidence": 1.0,
+      "tags": [
+        "nextjs",
+        "vercel",
+        "cve",
+        "security",
+        "deployment"
+      ]
+    },
+    {
+      "id": "dp007",
+      "category": "ARCHITECTURE",
+      "title": "DevPilot three-tier SaaS architecture pattern",
+      "core": "Free tier (3 repos, core deploy), Pro tier ($9/mo, unlimited + AI audit/fix/chat), Team tier ($29/mo, multi-user shared vault). License keys DPLT-XXXX format gate tier access server-side.",
+      "proof": "Built and deployed DevPilot v1.0 with this exact tier system",
+      "code_application": "DevPilot, any SaaS product",
+      "compounds_with": [
+        "saas",
+        "monetization",
+        "tiers"
+      ],
+      "confidence": 1.0,
+      "tags": [
+        "saas",
+        "tiers",
+        "monetization",
+        "devpilot",
+        "license"
+      ]
+    },
+    {
+      "id": "dp008",
+      "category": "PATTERN",
+      "title": "Railway DB migration from Termux using public URL",
+      "core": "Run migrations from Termux with DATABASE_URL set to the public proxy URL: DATABASE_URL='postgresql://...' node backend/db/migrate.js from inside the backend folder where pg is installed.",
+      "proof": "Migration succeeded after switching to public URL and running from backend/ directory",
+      "code_application": "all Railway PostgreSQL projects",
+      "compounds_with": [
+        "railway",
+        "postgresql",
+        "migration",
+        "termux"
+      ],
+      "confidence": 1.0,
+      "tags": [
+        "migration",
+        "railway",
+        "termux",
+        "postgresql",
+        "pattern"
+      ]
+    },
+    {
+      "id": "dp009",
+      "category": "SYSTEM",
+      "title": "FanzAgent v5.2 AI Brain system architecture",
+      "core": "Brain persists in brain.json as portable knowledge store. Cosine similarity blocks duplicate atoms. Universal extraction prompt works on any AI. brain ingest/ask/search/stats/push commands form the complete knowledge loop.",
+      "proof": "Built and deployed FanzAgent v5.2 with full brain system, ingested 50 atoms",
+      "code_application": "FanzAgent v5.2, byfanzoftheone-stack",
+      "compounds_with": [
+        "brainvault",
+        "knowledge",
+        "fanzagent"
+      ],
+      "confidence": 1.0,
+      "tags": [
+        "fanzagent",
+        "brain",
+        "knowledge",
+        "atoms",
+        "v5"
+      ]
+    },
+    {
+      "id": "dp010",
+      "category": "BUILD_METHOD",
+      "title": "DevPilot full stack build order",
+      "core": "Build order: 1) Backend routes+services, 2) DB migration, 3) Socket.IO terminal streaming, 4) Frontend pages, 5) Deploy backend to Railway, 6) Deploy frontend to Vercel, 7) Wire ALLOWED_ORIGINS, 8) Run migration via public URL",
+      "proof": "Successfully deployed DevPilot v1.0 following this exact order",
+      "code_application": "DevPilot and all future fullstack projects",
+      "compounds_with": [
+        "railway",
+        "vercel",
+        "postgresql",
+        "devpilot"
+      ],
+      "confidence": 1.0,
+      "tags": [
+        "devpilot",
+        "build-order",
+        "deployment",
+        "fullstack",
+        "pattern"
+      ]
     }
   ],
   "mathematical_models": [],
-  "build_decisions": [],
+  "build_decisions": [
+    {
+      "decision": "Delete PORT variable from Railway — never hardcode it",
+      "reasoning": "Railway injects PORT dynamically. Hardcoding overrides it and blocks external traffic.",
+      "applies_to": "all Railway Express services",
+      "reversible": true
+    },
+    {
+      "decision": "Use createTableIfMissing:true in connect-pg-simple",
+      "reasoning": "Prevents boot crash when sessions table doesn't exist yet",
+      "applies_to": "all Express+PG session stores",
+      "reversible": true
+    },
+    {
+      "decision": "DevPilot tier system: Free/Pro/Team with DPLT- license keys",
+      "reasoning": "Simplest monetization that gates AI features behind Pro without requiring Stripe on day one",
+      "applies_to": "DevPilot",
+      "reversible": true
+    }
+  ],
   "sessions": [
     {
       "session_id": "92cf11ae",
@@ -1066,9 +1294,27 @@
       "math_added": 0,
       "decisions_added": 0,
       "summary": "Batch ingested 50 knowledge documents from FanzOS Master Brain v5 package covering Avatar, AI Systems, Anthropic, Computation, Mobile/Termux, Ethics and Safety."
+    },
+    {
+      "session_id": "30701ce6",
+      "source_platform": "Claude",
+      "ingested_at": "2026-04-26T10:15:52.231403",
+      "atoms_added": 10,
+      "atoms_blocked": 0,
+      "math_added": 0,
+      "decisions_added": 3,
+      "summary": "Built and deployed DevPilot v1.0 — full SaaS product from Android phone. Discovered 10 critical patterns for Railway+Vercel deployment. Installed FanzAgent v5.2 with AI Brain system. Ingested 50 FanzOS knowledge atoms. THE ONE Brain lifecycle system planned as C: private master instance + Pro user instances."
     }
   ],
-  "total_atoms": 50,
-  "total_sessions": 1,
-  "last_updated": "2026-04-26T10:03:09.742809"
+  "total_atoms": 60,
+  "total_sessions": 2,
+  "last_updated": "2026-04-26T10:15:52.231439",
+  "compound_theories": [
+    {
+      "theory": "The PORT+CORS+Migration triple — when a Railway+Vercel app fails silently, check these three in order: (1) PORT not hardcoded, (2) ALLOWED_ORIGINS matches exact Vercel URL, (3) DATABASE_URL uses public proxy for external connections. These three variables account for 90% of Railway+Vercel connection failures.",
+      "session_id": "30701ce6",
+      "source": "Claude",
+      "date": "2026-04-26T10:15:52.231448"
+    }
+  ]
 }
