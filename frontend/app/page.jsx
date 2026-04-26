@@ -910,9 +910,9 @@ export default function FanzOSMasterBrain() {
             <button key={t.id} onClick={() => setTab(t.id)}
               style={{
                 flex: 1, background: tab === t.id ? T.panel : "transparent",
-                color: tab === t.id ? t.color : T.dim,
+                color: tab === t.id ? (t.color || T.cyan) : T.dim,
                 fontFamily: MONO, fontSize: 11, fontWeight: "bold", padding: "10px 4px",
-                border: tab === t.id ? `1px solid ${t.color}44` : "1px solid transparent",
+                border: tab === t.id ? `1px solid ${t.color || T.cyan}44` : "1px solid transparent",
                 borderRadius: 7, cursor: "pointer", letterSpacing: 0.5, transition: "all 0.15s",
               }}>
               {t.label}
